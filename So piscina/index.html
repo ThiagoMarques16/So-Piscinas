@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Só Piscinas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+
+        <header>
+            <div class="img-wrapper">
+                <img src="img/banner2.jpg" alt="banner-piscina">
+            </div>
+            <div class="banner">
+                <h1>Cuidamos da água,<br>cuidamos de você!</h1>
+                <p>Tratamento de piscinas</p>
+                <button>Saiba mais</button>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Sobre nós</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Trabalhos</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </aside>
+
+        <section class="sessao-servicos">
+            <div class="sessao-header">
+                <h1>Nossos Serviços</h1>
+            </div>
+            <div class="servicos">
+                <div class="servico">
+                    <div class="servico-header">
+                        <i class="fa-solid fa-vial"></i>
+                        <h3>Medição de Ph</h3>
+                    </div>
+                    <div class="servico-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem id provident accusamus magni deleniti accusantium possimus, hic ipsa obcaecati illo fuga ut sequi pariatur esse recusandae unde omnis mollitia.</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <div class="servico-header">
+                        <i class="fa-solid fa-broom"></i>
+                        <h3>Limpeza</h3>
+                    </div>
+                    <div class="servico-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati et voluptas fugiat dolore eos sit ab ullam? Optio magnam recusandae laborum magni veritatis porro fugit, et dolorum unde excepturi ullam.</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <div class="servico-header">
+                        <i class="fa-solid fa-users"></i>                       
+                        <h3>Atendimento</h3>
+                    </div>
+                    <div class="servico-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quia libero dolorum modi? Ducimus fugit quod perferendis molestias eius, error recusandae distinctio corporis animi, ullam a similique aut commodi nostrum.</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <div class="servico-header">
+                        <i class="fa-solid fa-flask"></i>
+                        <h3>Dosagem</h3>
+                    </div>
+                    <div class="servico-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit quod consectetur molestias veniam aliquam quidem expedita quam unde quos. Quisquam ab nemo iusto autem voluptatibus quos unde? Excepturi, eveniet.</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <div class="servico-header">
+                        <i class="fa-solid fa-person-booth"></i>
+                        <h3>Confecção de Capas</h3>
+                    </div>
+                    <div class="servico-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, natus? Quo rerum ullam, ipsa illo, inventore non repellat corrupti quae, error ratione asperiores ex cum maiores quisquam nihil cupiditate totam!</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <div class="servico-header">
+                        <i class="fa-solid fa-coins"></i>
+                        <h3>Financeiro</h3>
+                    </div>
+                    <div class="servico-text">
+                        <p>aLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat iure cupiditate labore, quam pariatur accusantium. Voluptatum quisquam reiciendis ducimus architecto vitae minima iste necessitatibus suscipit. Exercitationem culpa illo animi.</p>
+                    </div>
+                </div>
+                <div class="servico-img-wrapper">
+                    <img src="img/logo-sp.png" alt="só piscina">
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div id="overlay">
+                <form onsubmit="event.preventDefault(); validateForms(); enviarEmail()">
+                    <h1>Contato</h1>
+                    <label for="name">Nome:</label>
+                    <input type="text"id="name" placeholder="Digite seu nome">
+                    <small class="error"></small>
+    
+                    <label for="email">Email:</label>
+                    <input type="text"id="email" placeholder="Digite seu email">
+                    <small class="error"></small>
+
+                    <label for="email">Telefone:</label>
+                    <input type="tel"id="tell" placeholder="(DDD) 0000-0000">
+                    <small class="error"></small>
+    
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" placeholder="Digite sua mensagem" rows="6"></textarea>
+                    <small class="error"></small>
+    
+                    <div class="center">
+                         <input type="submit" value="Enviar">
+                         <p id="success"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</html>
